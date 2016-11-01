@@ -8,8 +8,8 @@ public class ValidateOptional {
 	}
 	public String getCarInsuranceName(Optional<Person> person) {
 		return person.flatMap(Person::getCar)
-				  .flatMap(Car::getInsurance)
-				  .map(Insurance::getName)
-				  .orElse("unknown");
+					 .flatMap(Car::getInsurance)
+					 .map(Insurance::getName)
+					 .orElse("unknown");
 	}
 }

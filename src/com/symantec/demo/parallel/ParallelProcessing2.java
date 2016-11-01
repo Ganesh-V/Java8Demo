@@ -5,7 +5,7 @@ import java.util.stream.LongStream;
 
 public class ParallelProcessing2 {
 	public static void main(String[] args) {
-		long range = 100000L;
+		long range = 1000000000L;
 		System.out.println("Result : " + time(ParallelProcessing2::sequentialSum, range));
 	}
 
