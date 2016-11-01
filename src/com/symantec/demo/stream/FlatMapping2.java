@@ -14,6 +14,6 @@ public class FlatMapping2 {
 				.flatMap(i -> number2.stream().map(j -> new int[] { i, j }))
 				.collect(Collectors.toList());
 		
-		result.forEach(result -> System.out.println(Arrays.toString(result)));
+		result.forEach(r-> System.out.println(Arrays.toString(r)));
 	} 
 }
