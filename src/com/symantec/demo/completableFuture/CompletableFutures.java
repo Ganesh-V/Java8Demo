@@ -12,7 +12,7 @@ public class CompletableFutures {
 
 	public static void main(String[] args) {
 		ExecutorService executor = Executors.newCachedThreadPool();
-		
+		 
 		Future<Double> future = executor.submit(new Callable<Double>() {
 			@Override
 			public Double call() throws InterruptedException {
